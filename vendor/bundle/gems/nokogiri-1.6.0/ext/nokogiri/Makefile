@@ -12,11 +12,11 @@ ECHO = $(ECHO1:0=@echo)
 #### Start of system configuration section. ####
 
 srcdir = .
-topdir = /Users/darrinmc/.rbenv/versions/1.9.3-p448/include/ruby-1.9.1
-hdrdir = /Users/darrinmc/.rbenv/versions/1.9.3-p448/include/ruby-1.9.1
-arch_hdrdir = /Users/darrinmc/.rbenv/versions/1.9.3-p448/include/ruby-1.9.1/$(arch)
+topdir = /Users/darrinmc/.rvm/rubies/ruby-1.9.3-p448/include/ruby-1.9.1
+hdrdir = /Users/darrinmc/.rvm/rubies/ruby-1.9.3-p448/include/ruby-1.9.1
+arch_hdrdir = /Users/darrinmc/.rvm/rubies/ruby-1.9.3-p448/include/ruby-1.9.1/$(arch)
 VPATH = $(srcdir):$(arch_hdrdir)/ruby:$(hdrdir)/ruby
-prefix = $(DESTDIR)/Users/darrinmc/.rbenv/versions/1.9.3-p448
+prefix = $(DESTDIR)/Users/darrinmc/.rvm/rubies/ruby-1.9.3-p448
 rubylibprefix = $(libdir)/$(RUBY_BASE_NAME)
 exec_prefix = $(prefix)
 vendorhdrdir = $(rubyhdrdir)/vendor_ruby
@@ -53,11 +53,11 @@ vendorarchdir = $(vendorlibdir)/$(sitearch)
 
 NULLCMD = :
 
-CC = gcc
+CC = /usr/local/bin/gcc-4.2
 CXX = g++
-LIBRUBY = $(LIBRUBY_A)
+LIBRUBY = $(LIBRUBY_SO)
 LIBRUBY_A = lib$(RUBY_SO_NAME)-static.a
-LIBRUBYARG_SHARED = 
+LIBRUBYARG_SHARED = -l$(RUBY_SO_NAME)
 LIBRUBYARG_STATIC = -l$(RUBY_SO_NAME)-static
 empty =
 OUTFLAG = -o $(empty)
@@ -68,13 +68,13 @@ cflags   =  $(optflags) $(debugflags) $(warnflags)
 optflags = -O3
 debugflags = -ggdb
 warnflags = -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wshorten-64-to-32 -Wimplicit-function-declaration
-CFLAGS   = -fno-common  -O3 -Wno-error=shorten-64-to-32  -pipe  -g -DXP_UNIX -Wall -Wcast-qual -Wwrite-strings -Wconversion -Wmissing-noreturn -Winline -DNOKOGIRI_USE_PACKAGED_LIBRARIES -DNOKOGIRI_LIBXML2_PATH='"/Users/darrinmc/Projects/Rails/sample_app/vendor/bundle/gems/nokogiri-1.6.0/ports/i686-apple-darwin11/libxml2/2.8.0"' -DNOKOGIRI_LIBXSLT_PATH='"/Users/darrinmc/Projects/Rails/sample_app/vendor/bundle/gems/nokogiri-1.6.0/ports/i686-apple-darwin11/libxslt/1.1.26"' $(ARCH_FLAG)
+CFLAGS   = -fno-common $(cflags)  -fno-common -pipe  -g -DXP_UNIX -O3 -Wall -Wcast-qual -Wwrite-strings -Wconversion -Wmissing-noreturn -Winline -DNOKOGIRI_USE_PACKAGED_LIBRARIES -DNOKOGIRI_LIBXML2_PATH='"/Users/darrinmc/Projects/Rails/sample_app/vendor/bundle/gems/nokogiri-1.6.0/ports/x86_64-apple-darwin12.5.0/libxml2/2.8.0"' -DNOKOGIRI_LIBXSLT_PATH='"/Users/darrinmc/Projects/Rails/sample_app/vendor/bundle/gems/nokogiri-1.6.0/ports/x86_64-apple-darwin12.5.0/libxslt/1.1.26"' $(ARCH_FLAG)
 INCFLAGS = -I. -I$(arch_hdrdir) -I$(hdrdir)/ruby/backward -I$(hdrdir) -I$(srcdir)
 DEFS     = 
-CPPFLAGS = -DHAVE_XMLHASFEATURE -DHAVE_XMLFIRSTELEMENTCHILD -DHAVE_XMLRELAXNGSETPARSERSTRUCTUREDERRORS -DHAVE_XMLRELAXNGSETPARSERSTRUCTUREDERRORS -DHAVE_XMLRELAXNGSETVALIDSTRUCTUREDERRORS -DHAVE_XMLSCHEMASETVALIDSTRUCTUREDERRORS -DHAVE_XMLSCHEMASETPARSERSTRUCTUREDERRORS -I/Users/darrinmc/Projects/Rails/sample_app/vendor/bundle/gems/nokogiri-1.6.0/ports/i686-apple-darwin11/libxml2/2.8.0/include/libxml2 -I/Users/darrinmc/Projects/Rails/sample_app/vendor/bundle/gems/nokogiri-1.6.0/ports/i686-apple-darwin11/libxml2/2.8.0/include -I/Users/darrinmc/Projects/Rails/sample_app/vendor/bundle/gems/nokogiri-1.6.0/ports/i686-apple-darwin11/libxslt/1.1.26/include -I'/Users/darrinmc/.rbenv/versions/1.9.3-p448/include'  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE $(DEFS) $(cppflags)
+CPPFLAGS = -DHAVE_XMLHASFEATURE -DHAVE_XMLFIRSTELEMENTCHILD -DHAVE_XMLRELAXNGSETPARSERSTRUCTUREDERRORS -DHAVE_XMLRELAXNGSETPARSERSTRUCTUREDERRORS -DHAVE_XMLRELAXNGSETVALIDSTRUCTUREDERRORS -DHAVE_XMLSCHEMASETVALIDSTRUCTUREDERRORS -DHAVE_XMLSCHEMASETPARSERSTRUCTUREDERRORS -I/Users/darrinmc/Projects/Rails/sample_app/vendor/bundle/gems/nokogiri-1.6.0/ports/x86_64-apple-darwin12.5.0/libxml2/2.8.0/include/libxml2 -I/Users/darrinmc/Projects/Rails/sample_app/vendor/bundle/gems/nokogiri-1.6.0/ports/x86_64-apple-darwin12.5.0/libxml2/2.8.0/include -I/Users/darrinmc/Projects/Rails/sample_app/vendor/bundle/gems/nokogiri-1.6.0/ports/x86_64-apple-darwin12.5.0/libxslt/1.1.26/include -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE $(DEFS) $(cppflags) -I/usr/local/opt/libyaml/include -I/usr/local/opt/readline/include -I/usr/local/opt/libksba/include -I/usr/local/opt/openssl/include
 CXXFLAGS = $(CFLAGS) $(cxxflags)
-ldflags  = -L. -L'/Users/darrinmc/.rbenv/versions/1.9.3-p448/lib'  -L/usr/local/lib -Wl,-rpath,/Users/darrinmc/Projects/Rails/sample_app/vendor/bundle/gems/nokogiri-1.6.0/ports/i686-apple-darwin11/libxml2/2.8.0/lib -Wl,-rpath,/Users/darrinmc/Projects/Rails/sample_app/vendor/bundle/gems/nokogiri-1.6.0/ports/i686-apple-darwin11/libxslt/1.1.26/lib
-dldflags = -Wl,-undefined,dynamic_lookup -Wl,-multiply_defined,suppress -Wl,-flat_namespace 
+ldflags  = -L. -L/usr/local/lib -L/usr/local/opt/libyaml/lib -L/usr/local/opt/readline/lib -L/usr/local/opt/libksba/lib -L/usr/local/opt/openssl/lib  -Wl,-rpath,/Users/darrinmc/Projects/Rails/sample_app/vendor/bundle/gems/nokogiri-1.6.0/ports/x86_64-apple-darwin12.5.0/libxml2/2.8.0/lib -Wl,-rpath,/Users/darrinmc/Projects/Rails/sample_app/vendor/bundle/gems/nokogiri-1.6.0/ports/x86_64-apple-darwin12.5.0/libxslt/1.1.26/lib
+dldflags = -Wl,-undefined,dynamic_lookup -Wl,-multiply_defined,suppress -Wl,-flat_namespace -L/usr/local/opt/libyaml/lib -L/usr/local/opt/readline/lib -L/usr/local/opt/libksba/lib -L/usr/local/opt/openssl/lib  
 ARCH_FLAG = 
 DLDFLAGS = $(ldflags) $(dldflags) $(ARCH_FLAG)
 LDSHARED = $(CC) -dynamic -bundle
@@ -84,11 +84,11 @@ EXEEXT =
 
 RUBY_BASE_NAME = ruby
 RUBY_INSTALL_NAME = ruby
-RUBY_SO_NAME = ruby
+RUBY_SO_NAME = ruby.1.9.1
 arch = x86_64-darwin12.5.0
 sitearch = $(arch)
 ruby_version = 1.9.1
-ruby = /Users/darrinmc/.rbenv/versions/1.9.3-p448/bin/ruby
+ruby = /Users/darrinmc/.rvm/rubies/ruby-1.9.3-p448/bin/ruby
 RUBY = $(ruby)
 RM = rm -f
 RM_RF = $(RUBY) -run -e rm -- -rf
@@ -104,8 +104,8 @@ TOUCH = exit >
 
 preload = 
 
-libpath = . $(libdir) /Users/darrinmc/Projects/Rails/sample_app/vendor/bundle/gems/nokogiri-1.6.0/ports/i686-apple-darwin11/libxml2/2.8.0/lib /Users/darrinmc/Projects/Rails/sample_app/vendor/bundle/gems/nokogiri-1.6.0/ports/i686-apple-darwin11/libxslt/1.1.26/lib
-LIBPATH =  -L. -L$(libdir) -L/Users/darrinmc/Projects/Rails/sample_app/vendor/bundle/gems/nokogiri-1.6.0/ports/i686-apple-darwin11/libxml2/2.8.0/lib -L/Users/darrinmc/Projects/Rails/sample_app/vendor/bundle/gems/nokogiri-1.6.0/ports/i686-apple-darwin11/libxslt/1.1.26/lib
+libpath = . $(libdir) /Users/darrinmc/Projects/Rails/sample_app/vendor/bundle/gems/nokogiri-1.6.0/ports/x86_64-apple-darwin12.5.0/libxml2/2.8.0/lib /Users/darrinmc/Projects/Rails/sample_app/vendor/bundle/gems/nokogiri-1.6.0/ports/x86_64-apple-darwin12.5.0/libxslt/1.1.26/lib /usr/local/opt/libyaml/lib /usr/local/opt/readline/lib /usr/local/opt/libksba/lib /usr/local/opt/openssl/lib
+LIBPATH =  -L. -L$(libdir) -L/Users/darrinmc/Projects/Rails/sample_app/vendor/bundle/gems/nokogiri-1.6.0/ports/x86_64-apple-darwin12.5.0/libxml2/2.8.0/lib -L/Users/darrinmc/Projects/Rails/sample_app/vendor/bundle/gems/nokogiri-1.6.0/ports/x86_64-apple-darwin12.5.0/libxslt/1.1.26/lib -L/usr/local/opt/libyaml/lib -L/usr/local/opt/readline/lib -L/usr/local/opt/libksba/lib -L/usr/local/opt/openssl/lib
 DEFFILE = 
 
 CLEANFILES = mkmf.log
@@ -116,7 +116,7 @@ extout =
 extout_prefix = 
 target_prefix = /nokogiri
 LOCAL_LIBS = 
-LIBS =  -lexslt -lxslt -lxml2 -liconv  -lpthread -ldl -lobjc  
+LIBS = $(LIBRUBYARG_SHARED) -lexslt -lxslt -lxml2 -liconv  -lpthread -ldl -lobjc  
 SRCS = html_document.c html_element_description.c html_entity_lookup.c html_sax_parser_context.c html_sax_push_parser.c nokogiri.c xml_attr.c xml_attribute_decl.c xml_cdata.c xml_comment.c xml_document.c xml_document_fragment.c xml_dtd.c xml_element_content.c xml_element_decl.c xml_encoding_handler.c xml_entity_decl.c xml_entity_reference.c xml_io.c xml_libxml2_hacks.c xml_namespace.c xml_node.c xml_node_set.c xml_processing_instruction.c xml_reader.c xml_relax_ng.c xml_sax_parser.c xml_sax_parser_context.c xml_sax_push_parser.c xml_schema.c xml_syntax_error.c xml_text.c xml_xpath_context.c xslt_stylesheet.c
 OBJS = html_document.o html_element_description.o html_entity_lookup.o html_sax_parser_context.o html_sax_push_parser.o nokogiri.o xml_attr.o xml_attribute_decl.o xml_cdata.o xml_comment.o xml_document.o xml_document_fragment.o xml_dtd.o xml_element_content.o xml_element_decl.o xml_encoding_handler.o xml_entity_decl.o xml_entity_reference.o xml_io.o xml_libxml2_hacks.o xml_namespace.o xml_node.o xml_node_set.o xml_processing_instruction.o xml_reader.o xml_relax_ng.o xml_sax_parser.o xml_sax_parser_context.o xml_sax_push_parser.o xml_schema.o xml_syntax_error.o xml_text.o xml_xpath_context.o xslt_stylesheet.o
 TARGET = nokogiri

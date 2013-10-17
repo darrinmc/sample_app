@@ -1,7 +1,7 @@
 package configuration for libffi is not found
 have_header: checking for ffi.h... -------------------- no
 
-"gcc -o conftest -I/Users/darrinmc/.rbenv/versions/1.9.3-p448/include/ruby-1.9.1/x86_64-darwin12.5.0 -I/Users/darrinmc/.rbenv/versions/1.9.3-p448/include/ruby-1.9.1/ruby/backward -I/Users/darrinmc/.rbenv/versions/1.9.3-p448/include/ruby-1.9.1 -I. -I'/Users/darrinmc/.rbenv/versions/1.9.3-p448/include'  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE  -I'/Users/darrinmc/.rbenv/versions/1.9.3-p448/include'   -O3 -Wno-error=shorten-64-to-32  -pipe conftest.c  -L. -L/Users/darrinmc/.rbenv/versions/1.9.3-p448/lib -L. -L'/Users/darrinmc/.rbenv/versions/1.9.3-p448/lib'  -L/usr/local/lib     -lruby-static  -lpthread -ldl -lobjc "
+"/usr/local/bin/gcc-4.2 -o conftest -I/Users/darrinmc/.rvm/rubies/ruby-1.9.3-p448/include/ruby-1.9.1/x86_64-darwin12.5.0 -I/Users/darrinmc/.rvm/rubies/ruby-1.9.3-p448/include/ruby-1.9.1/ruby/backward -I/Users/darrinmc/.rvm/rubies/ruby-1.9.3-p448/include/ruby-1.9.1 -I. -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/usr/local/opt/libyaml/include -I/usr/local/opt/readline/include -I/usr/local/opt/libksba/include -I/usr/local/opt/openssl/include  -O3 -ggdb -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wshorten-64-to-32 -Wimplicit-function-declaration  -fno-common -pipe conftest.c  -L. -L/Users/darrinmc/.rvm/rubies/ruby-1.9.3-p448/lib -L/usr/local/opt/libyaml/lib -L/usr/local/opt/readline/lib -L/usr/local/opt/libksba/lib -L/usr/local/opt/openssl/lib -L. -L/usr/local/lib -L/usr/local/opt/libyaml/lib -L/usr/local/opt/readline/lib -L/usr/local/opt/libksba/lib -L/usr/local/opt/openssl/lib      -lruby.1.9.1  -lpthread -ldl -lobjc "
 checked program was:
 /* begin */
 1: #include "ruby.h"
@@ -12,7 +12,7 @@ checked program was:
 6: }
 /* end */
 
-"gcc -E -I/Users/darrinmc/.rbenv/versions/1.9.3-p448/include/ruby-1.9.1/x86_64-darwin12.5.0 -I/Users/darrinmc/.rbenv/versions/1.9.3-p448/include/ruby-1.9.1/ruby/backward -I/Users/darrinmc/.rbenv/versions/1.9.3-p448/include/ruby-1.9.1 -I. -I'/Users/darrinmc/.rbenv/versions/1.9.3-p448/include'  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE  -I'/Users/darrinmc/.rbenv/versions/1.9.3-p448/include'   -O3 -Wno-error=shorten-64-to-32  -pipe  conftest.c -o conftest.i"
+"/usr/local/bin/gcc-4.2 -E -I/Users/darrinmc/.rvm/rubies/ruby-1.9.3-p448/include/ruby-1.9.1/x86_64-darwin12.5.0 -I/Users/darrinmc/.rvm/rubies/ruby-1.9.3-p448/include/ruby-1.9.1/ruby/backward -I/Users/darrinmc/.rvm/rubies/ruby-1.9.3-p448/include/ruby-1.9.1 -I. -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/usr/local/opt/libyaml/include -I/usr/local/opt/readline/include -I/usr/local/opt/libksba/include -I/usr/local/opt/openssl/include  -O3 -ggdb -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wshorten-64-to-32 -Wimplicit-function-declaration  -fno-common -pipe  conftest.c -o conftest.i"
 conftest.c:3:17: error: ffi.h: No such file or directory
 checked program was:
 /* begin */
@@ -25,7 +25,7 @@ checked program was:
 
 find_header: checking for ffi.h in /usr/local/include,/usr/include/ffi... -------------------- yes
 
-"gcc -E -I/Users/darrinmc/.rbenv/versions/1.9.3-p448/include/ruby-1.9.1/x86_64-darwin12.5.0 -I/Users/darrinmc/.rbenv/versions/1.9.3-p448/include/ruby-1.9.1/ruby/backward -I/Users/darrinmc/.rbenv/versions/1.9.3-p448/include/ruby-1.9.1 -I. -I'/Users/darrinmc/.rbenv/versions/1.9.3-p448/include'  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE  -I'/Users/darrinmc/.rbenv/versions/1.9.3-p448/include'   -O3 -Wno-error=shorten-64-to-32  -pipe  conftest.c -o conftest.i"
+"/usr/local/bin/gcc-4.2 -E -I/Users/darrinmc/.rvm/rubies/ruby-1.9.3-p448/include/ruby-1.9.1/x86_64-darwin12.5.0 -I/Users/darrinmc/.rvm/rubies/ruby-1.9.3-p448/include/ruby-1.9.1/ruby/backward -I/Users/darrinmc/.rvm/rubies/ruby-1.9.3-p448/include/ruby-1.9.1 -I. -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/usr/local/opt/libyaml/include -I/usr/local/opt/readline/include -I/usr/local/opt/libksba/include -I/usr/local/opt/openssl/include  -O3 -ggdb -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wshorten-64-to-32 -Wimplicit-function-declaration  -fno-common -pipe  conftest.c -o conftest.i"
 conftest.c:3:17: error: ffi.h: No such file or directory
 checked program was:
 /* begin */
@@ -34,7 +34,7 @@ checked program was:
 3: #include <ffi.h>
 /* end */
 
-"gcc -E -I/Users/darrinmc/.rbenv/versions/1.9.3-p448/include/ruby-1.9.1/x86_64-darwin12.5.0 -I/Users/darrinmc/.rbenv/versions/1.9.3-p448/include/ruby-1.9.1/ruby/backward -I/Users/darrinmc/.rbenv/versions/1.9.3-p448/include/ruby-1.9.1 -I. -I'/Users/darrinmc/.rbenv/versions/1.9.3-p448/include'  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE  -I'/Users/darrinmc/.rbenv/versions/1.9.3-p448/include'   -O3 -Wno-error=shorten-64-to-32  -pipe -I/usr/local/include conftest.c -o conftest.i"
+"/usr/local/bin/gcc-4.2 -E -I/Users/darrinmc/.rvm/rubies/ruby-1.9.3-p448/include/ruby-1.9.1/x86_64-darwin12.5.0 -I/Users/darrinmc/.rvm/rubies/ruby-1.9.3-p448/include/ruby-1.9.1/ruby/backward -I/Users/darrinmc/.rvm/rubies/ruby-1.9.3-p448/include/ruby-1.9.1 -I. -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/usr/local/opt/libyaml/include -I/usr/local/opt/readline/include -I/usr/local/opt/libksba/include -I/usr/local/opt/openssl/include  -O3 -ggdb -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wshorten-64-to-32 -Wimplicit-function-declaration  -fno-common -pipe -I/usr/local/include conftest.c -o conftest.i"
 conftest.c:3:17: error: ffi.h: No such file or directory
 checked program was:
 /* begin */
@@ -43,7 +43,7 @@ checked program was:
 3: #include <ffi.h>
 /* end */
 
-"gcc -E -I/Users/darrinmc/.rbenv/versions/1.9.3-p448/include/ruby-1.9.1/x86_64-darwin12.5.0 -I/Users/darrinmc/.rbenv/versions/1.9.3-p448/include/ruby-1.9.1/ruby/backward -I/Users/darrinmc/.rbenv/versions/1.9.3-p448/include/ruby-1.9.1 -I. -I'/Users/darrinmc/.rbenv/versions/1.9.3-p448/include'  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE  -I'/Users/darrinmc/.rbenv/versions/1.9.3-p448/include'   -O3 -Wno-error=shorten-64-to-32  -pipe -I/usr/include/ffi conftest.c -o conftest.i"
+"/usr/local/bin/gcc-4.2 -E -I/Users/darrinmc/.rvm/rubies/ruby-1.9.3-p448/include/ruby-1.9.1/x86_64-darwin12.5.0 -I/Users/darrinmc/.rvm/rubies/ruby-1.9.3-p448/include/ruby-1.9.1/ruby/backward -I/Users/darrinmc/.rvm/rubies/ruby-1.9.3-p448/include/ruby-1.9.1 -I. -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/usr/local/opt/libyaml/include -I/usr/local/opt/readline/include -I/usr/local/opt/libksba/include -I/usr/local/opt/openssl/include  -O3 -ggdb -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wshorten-64-to-32 -Wimplicit-function-declaration  -fno-common -pipe -I/usr/include/ffi conftest.c -o conftest.i"
 checked program was:
 /* begin */
 1: #include "ruby.h"
@@ -55,7 +55,7 @@ checked program was:
 
 have_library: checking for ffi_call() in -lffi... -------------------- yes
 
-"gcc -o conftest -I/Users/darrinmc/.rbenv/versions/1.9.3-p448/include/ruby-1.9.1/x86_64-darwin12.5.0 -I/Users/darrinmc/.rbenv/versions/1.9.3-p448/include/ruby-1.9.1/ruby/backward -I/Users/darrinmc/.rbenv/versions/1.9.3-p448/include/ruby-1.9.1 -I. -I/usr/include/ffi -I'/Users/darrinmc/.rbenv/versions/1.9.3-p448/include'  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE  -I'/Users/darrinmc/.rbenv/versions/1.9.3-p448/include'   -O3 -Wno-error=shorten-64-to-32  -pipe conftest.c  -L. -L/Users/darrinmc/.rbenv/versions/1.9.3-p448/lib -L. -L'/Users/darrinmc/.rbenv/versions/1.9.3-p448/lib'  -L/usr/local/lib     -lruby-static -lffi  -lpthread -ldl -lobjc "
+"/usr/local/bin/gcc-4.2 -o conftest -I/Users/darrinmc/.rvm/rubies/ruby-1.9.3-p448/include/ruby-1.9.1/x86_64-darwin12.5.0 -I/Users/darrinmc/.rvm/rubies/ruby-1.9.3-p448/include/ruby-1.9.1/ruby/backward -I/Users/darrinmc/.rvm/rubies/ruby-1.9.3-p448/include/ruby-1.9.1 -I. -I/usr/include/ffi -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/usr/local/opt/libyaml/include -I/usr/local/opt/readline/include -I/usr/local/opt/libksba/include -I/usr/local/opt/openssl/include  -O3 -ggdb -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wshorten-64-to-32 -Wimplicit-function-declaration  -fno-common -pipe conftest.c  -L. -L/Users/darrinmc/.rvm/rubies/ruby-1.9.3-p448/lib -L/usr/local/opt/libyaml/lib -L/usr/local/opt/readline/lib -L/usr/local/opt/libksba/lib -L/usr/local/opt/openssl/lib -L. -L/usr/local/lib -L/usr/local/opt/libyaml/lib -L/usr/local/opt/readline/lib -L/usr/local/opt/libksba/lib -L/usr/local/opt/openssl/lib      -lruby.1.9.1 -lffi  -lpthread -ldl -lobjc "
 checked program was:
 /* begin */
  1: #include "ruby.h"
@@ -78,7 +78,7 @@ checked program was:
 
 have_func: checking for ffi_prep_closure()... -------------------- yes
 
-"gcc -o conftest -I/Users/darrinmc/.rbenv/versions/1.9.3-p448/include/ruby-1.9.1/x86_64-darwin12.5.0 -I/Users/darrinmc/.rbenv/versions/1.9.3-p448/include/ruby-1.9.1/ruby/backward -I/Users/darrinmc/.rbenv/versions/1.9.3-p448/include/ruby-1.9.1 -I. -I/usr/include/ffi -I'/Users/darrinmc/.rbenv/versions/1.9.3-p448/include'  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE  -I'/Users/darrinmc/.rbenv/versions/1.9.3-p448/include'   -O3 -Wno-error=shorten-64-to-32  -pipe conftest.c  -L. -L/Users/darrinmc/.rbenv/versions/1.9.3-p448/lib -L. -L'/Users/darrinmc/.rbenv/versions/1.9.3-p448/lib'  -L/usr/local/lib    -lffi  -lruby-static -lffi  -lpthread -ldl -lobjc "
+"/usr/local/bin/gcc-4.2 -o conftest -I/Users/darrinmc/.rvm/rubies/ruby-1.9.3-p448/include/ruby-1.9.1/x86_64-darwin12.5.0 -I/Users/darrinmc/.rvm/rubies/ruby-1.9.3-p448/include/ruby-1.9.1/ruby/backward -I/Users/darrinmc/.rvm/rubies/ruby-1.9.3-p448/include/ruby-1.9.1 -I. -I/usr/include/ffi -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/usr/local/opt/libyaml/include -I/usr/local/opt/readline/include -I/usr/local/opt/libksba/include -I/usr/local/opt/openssl/include  -O3 -ggdb -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wshorten-64-to-32 -Wimplicit-function-declaration  -fno-common -pipe conftest.c  -L. -L/Users/darrinmc/.rvm/rubies/ruby-1.9.3-p448/lib -L/usr/local/opt/libyaml/lib -L/usr/local/opt/readline/lib -L/usr/local/opt/libksba/lib -L/usr/local/opt/openssl/lib -L. -L/usr/local/lib -L/usr/local/opt/libyaml/lib -L/usr/local/opt/readline/lib -L/usr/local/opt/libksba/lib -L/usr/local/opt/openssl/lib     -lffi  -lruby.1.9.1 -lffi  -lpthread -ldl -lobjc "
 conftest.c: In function ‘t’:
 conftest.c:4: error: ‘ffi_prep_closure’ undeclared (first use in this function)
 conftest.c:4: error: (Each undeclared identifier is reported only once
@@ -99,7 +99,9 @@ checked program was:
 12: }
 /* end */
 
-"gcc -o conftest -I/Users/darrinmc/.rbenv/versions/1.9.3-p448/include/ruby-1.9.1/x86_64-darwin12.5.0 -I/Users/darrinmc/.rbenv/versions/1.9.3-p448/include/ruby-1.9.1/ruby/backward -I/Users/darrinmc/.rbenv/versions/1.9.3-p448/include/ruby-1.9.1 -I. -I/usr/include/ffi -I'/Users/darrinmc/.rbenv/versions/1.9.3-p448/include'  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE  -I'/Users/darrinmc/.rbenv/versions/1.9.3-p448/include'   -O3 -Wno-error=shorten-64-to-32  -pipe conftest.c  -L. -L/Users/darrinmc/.rbenv/versions/1.9.3-p448/lib -L. -L'/Users/darrinmc/.rbenv/versions/1.9.3-p448/lib'  -L/usr/local/lib    -lffi  -lruby-static -lffi  -lpthread -ldl -lobjc "
+"/usr/local/bin/gcc-4.2 -o conftest -I/Users/darrinmc/.rvm/rubies/ruby-1.9.3-p448/include/ruby-1.9.1/x86_64-darwin12.5.0 -I/Users/darrinmc/.rvm/rubies/ruby-1.9.3-p448/include/ruby-1.9.1/ruby/backward -I/Users/darrinmc/.rvm/rubies/ruby-1.9.3-p448/include/ruby-1.9.1 -I. -I/usr/include/ffi -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/usr/local/opt/libyaml/include -I/usr/local/opt/readline/include -I/usr/local/opt/libksba/include -I/usr/local/opt/openssl/include  -O3 -ggdb -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wshorten-64-to-32 -Wimplicit-function-declaration  -fno-common -pipe conftest.c  -L. -L/Users/darrinmc/.rvm/rubies/ruby-1.9.3-p448/lib -L/usr/local/opt/libyaml/lib -L/usr/local/opt/readline/lib -L/usr/local/opt/libksba/lib -L/usr/local/opt/openssl/lib -L. -L/usr/local/lib -L/usr/local/opt/libyaml/lib -L/usr/local/opt/readline/lib -L/usr/local/opt/libksba/lib -L/usr/local/opt/openssl/lib     -lffi  -lruby.1.9.1 -lffi  -lpthread -ldl -lobjc "
+conftest.c: In function ‘t’:
+conftest.c:4: warning: implicit declaration of function ‘ffi_prep_closure’
 checked program was:
 /* begin */
  1: #include "ruby.h"
@@ -120,7 +122,7 @@ checked program was:
 
 have_func: checking for ffi_raw_call()... -------------------- no
 
-"gcc -o conftest -I/Users/darrinmc/.rbenv/versions/1.9.3-p448/include/ruby-1.9.1/x86_64-darwin12.5.0 -I/Users/darrinmc/.rbenv/versions/1.9.3-p448/include/ruby-1.9.1/ruby/backward -I/Users/darrinmc/.rbenv/versions/1.9.3-p448/include/ruby-1.9.1 -I. -I/usr/include/ffi -I'/Users/darrinmc/.rbenv/versions/1.9.3-p448/include'  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE  -I'/Users/darrinmc/.rbenv/versions/1.9.3-p448/include'   -O3 -Wno-error=shorten-64-to-32  -pipe conftest.c  -L. -L/Users/darrinmc/.rbenv/versions/1.9.3-p448/lib -L. -L'/Users/darrinmc/.rbenv/versions/1.9.3-p448/lib'  -L/usr/local/lib    -lffi  -lruby-static -lffi  -lpthread -ldl -lobjc "
+"/usr/local/bin/gcc-4.2 -o conftest -I/Users/darrinmc/.rvm/rubies/ruby-1.9.3-p448/include/ruby-1.9.1/x86_64-darwin12.5.0 -I/Users/darrinmc/.rvm/rubies/ruby-1.9.3-p448/include/ruby-1.9.1/ruby/backward -I/Users/darrinmc/.rvm/rubies/ruby-1.9.3-p448/include/ruby-1.9.1 -I. -I/usr/include/ffi -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/usr/local/opt/libyaml/include -I/usr/local/opt/readline/include -I/usr/local/opt/libksba/include -I/usr/local/opt/openssl/include  -O3 -ggdb -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wshorten-64-to-32 -Wimplicit-function-declaration  -fno-common -pipe conftest.c  -L. -L/Users/darrinmc/.rvm/rubies/ruby-1.9.3-p448/lib -L/usr/local/opt/libyaml/lib -L/usr/local/opt/readline/lib -L/usr/local/opt/libksba/lib -L/usr/local/opt/openssl/lib -L. -L/usr/local/lib -L/usr/local/opt/libyaml/lib -L/usr/local/opt/readline/lib -L/usr/local/opt/libksba/lib -L/usr/local/opt/openssl/lib     -lffi  -lruby.1.9.1 -lffi  -lpthread -ldl -lobjc "
 conftest.c: In function ‘t’:
 conftest.c:4: error: ‘ffi_raw_call’ undeclared (first use in this function)
 conftest.c:4: error: (Each undeclared identifier is reported only once
@@ -141,10 +143,12 @@ checked program was:
 12: }
 /* end */
 
-"gcc -o conftest -I/Users/darrinmc/.rbenv/versions/1.9.3-p448/include/ruby-1.9.1/x86_64-darwin12.5.0 -I/Users/darrinmc/.rbenv/versions/1.9.3-p448/include/ruby-1.9.1/ruby/backward -I/Users/darrinmc/.rbenv/versions/1.9.3-p448/include/ruby-1.9.1 -I. -I/usr/include/ffi -I'/Users/darrinmc/.rbenv/versions/1.9.3-p448/include'  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE  -I'/Users/darrinmc/.rbenv/versions/1.9.3-p448/include'   -O3 -Wno-error=shorten-64-to-32  -pipe conftest.c  -L. -L/Users/darrinmc/.rbenv/versions/1.9.3-p448/lib -L. -L'/Users/darrinmc/.rbenv/versions/1.9.3-p448/lib'  -L/usr/local/lib    -lffi  -lruby-static -lffi  -lpthread -ldl -lobjc "
+"/usr/local/bin/gcc-4.2 -o conftest -I/Users/darrinmc/.rvm/rubies/ruby-1.9.3-p448/include/ruby-1.9.1/x86_64-darwin12.5.0 -I/Users/darrinmc/.rvm/rubies/ruby-1.9.3-p448/include/ruby-1.9.1/ruby/backward -I/Users/darrinmc/.rvm/rubies/ruby-1.9.3-p448/include/ruby-1.9.1 -I. -I/usr/include/ffi -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/usr/local/opt/libyaml/include -I/usr/local/opt/readline/include -I/usr/local/opt/libksba/include -I/usr/local/opt/openssl/include  -O3 -ggdb -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wshorten-64-to-32 -Wimplicit-function-declaration  -fno-common -pipe conftest.c  -L. -L/Users/darrinmc/.rvm/rubies/ruby-1.9.3-p448/lib -L/usr/local/opt/libyaml/lib -L/usr/local/opt/readline/lib -L/usr/local/opt/libksba/lib -L/usr/local/opt/openssl/lib -L. -L/usr/local/lib -L/usr/local/opt/libyaml/lib -L/usr/local/opt/readline/lib -L/usr/local/opt/libksba/lib -L/usr/local/opt/openssl/lib     -lffi  -lruby.1.9.1 -lffi  -lpthread -ldl -lobjc "
+conftest.c: In function ‘t’:
+conftest.c:4: warning: implicit declaration of function ‘ffi_raw_call’
 Undefined symbols for architecture x86_64:
   "_ffi_raw_call", referenced from:
-      _t in ccIfG5Nk.o
+      _t in ccy2qQKc.o
 ld: symbol(s) not found for architecture x86_64
 collect2: ld returned 1 exit status
 checked program was:
@@ -167,7 +171,7 @@ checked program was:
 
 have_func: checking for rb_thread_blocking_region()... -------------------- yes
 
-"gcc -o conftest -I/Users/darrinmc/.rbenv/versions/1.9.3-p448/include/ruby-1.9.1/x86_64-darwin12.5.0 -I/Users/darrinmc/.rbenv/versions/1.9.3-p448/include/ruby-1.9.1/ruby/backward -I/Users/darrinmc/.rbenv/versions/1.9.3-p448/include/ruby-1.9.1 -I. -I/usr/include/ffi -I'/Users/darrinmc/.rbenv/versions/1.9.3-p448/include'  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE  -I'/Users/darrinmc/.rbenv/versions/1.9.3-p448/include'   -O3 -Wno-error=shorten-64-to-32  -pipe conftest.c  -L. -L/Users/darrinmc/.rbenv/versions/1.9.3-p448/lib -L. -L'/Users/darrinmc/.rbenv/versions/1.9.3-p448/lib'  -L/usr/local/lib    -lffi  -lruby-static -lffi  -lpthread -ldl -lobjc "
+"/usr/local/bin/gcc-4.2 -o conftest -I/Users/darrinmc/.rvm/rubies/ruby-1.9.3-p448/include/ruby-1.9.1/x86_64-darwin12.5.0 -I/Users/darrinmc/.rvm/rubies/ruby-1.9.3-p448/include/ruby-1.9.1/ruby/backward -I/Users/darrinmc/.rvm/rubies/ruby-1.9.3-p448/include/ruby-1.9.1 -I. -I/usr/include/ffi -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/usr/local/opt/libyaml/include -I/usr/local/opt/readline/include -I/usr/local/opt/libksba/include -I/usr/local/opt/openssl/include  -O3 -ggdb -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wshorten-64-to-32 -Wimplicit-function-declaration  -fno-common -pipe conftest.c  -L. -L/Users/darrinmc/.rvm/rubies/ruby-1.9.3-p448/lib -L/usr/local/opt/libyaml/lib -L/usr/local/opt/readline/lib -L/usr/local/opt/libksba/lib -L/usr/local/opt/openssl/lib -L. -L/usr/local/lib -L/usr/local/opt/libyaml/lib -L/usr/local/opt/readline/lib -L/usr/local/opt/libksba/lib -L/usr/local/opt/openssl/lib     -lffi  -lruby.1.9.1 -lffi  -lpthread -ldl -lobjc "
 checked program was:
 /* begin */
  1: #include "ruby.h"
@@ -188,7 +192,7 @@ checked program was:
 
 have_func: checking for rb_thread_call_with_gvl()... -------------------- yes
 
-"gcc -o conftest -I/Users/darrinmc/.rbenv/versions/1.9.3-p448/include/ruby-1.9.1/x86_64-darwin12.5.0 -I/Users/darrinmc/.rbenv/versions/1.9.3-p448/include/ruby-1.9.1/ruby/backward -I/Users/darrinmc/.rbenv/versions/1.9.3-p448/include/ruby-1.9.1 -I. -I/usr/include/ffi -I'/Users/darrinmc/.rbenv/versions/1.9.3-p448/include'  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE  -I'/Users/darrinmc/.rbenv/versions/1.9.3-p448/include'   -O3 -Wno-error=shorten-64-to-32  -pipe conftest.c  -L. -L/Users/darrinmc/.rbenv/versions/1.9.3-p448/lib -L. -L'/Users/darrinmc/.rbenv/versions/1.9.3-p448/lib'  -L/usr/local/lib    -lffi  -lruby-static -lffi  -lpthread -ldl -lobjc "
+"/usr/local/bin/gcc-4.2 -o conftest -I/Users/darrinmc/.rvm/rubies/ruby-1.9.3-p448/include/ruby-1.9.1/x86_64-darwin12.5.0 -I/Users/darrinmc/.rvm/rubies/ruby-1.9.3-p448/include/ruby-1.9.1/ruby/backward -I/Users/darrinmc/.rvm/rubies/ruby-1.9.3-p448/include/ruby-1.9.1 -I. -I/usr/include/ffi -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/usr/local/opt/libyaml/include -I/usr/local/opt/readline/include -I/usr/local/opt/libksba/include -I/usr/local/opt/openssl/include  -O3 -ggdb -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wshorten-64-to-32 -Wimplicit-function-declaration  -fno-common -pipe conftest.c  -L. -L/Users/darrinmc/.rvm/rubies/ruby-1.9.3-p448/lib -L/usr/local/opt/libyaml/lib -L/usr/local/opt/readline/lib -L/usr/local/opt/libksba/lib -L/usr/local/opt/openssl/lib -L. -L/usr/local/lib -L/usr/local/opt/libyaml/lib -L/usr/local/opt/readline/lib -L/usr/local/opt/libksba/lib -L/usr/local/opt/openssl/lib     -lffi  -lruby.1.9.1 -lffi  -lpthread -ldl -lobjc "
 conftest.c: In function ‘t’:
 conftest.c:4: error: ‘rb_thread_call_with_gvl’ undeclared (first use in this function)
 conftest.c:4: error: (Each undeclared identifier is reported only once
@@ -209,7 +213,9 @@ checked program was:
 12: }
 /* end */
 
-"gcc -o conftest -I/Users/darrinmc/.rbenv/versions/1.9.3-p448/include/ruby-1.9.1/x86_64-darwin12.5.0 -I/Users/darrinmc/.rbenv/versions/1.9.3-p448/include/ruby-1.9.1/ruby/backward -I/Users/darrinmc/.rbenv/versions/1.9.3-p448/include/ruby-1.9.1 -I. -I/usr/include/ffi -I'/Users/darrinmc/.rbenv/versions/1.9.3-p448/include'  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE  -I'/Users/darrinmc/.rbenv/versions/1.9.3-p448/include'   -O3 -Wno-error=shorten-64-to-32  -pipe conftest.c  -L. -L/Users/darrinmc/.rbenv/versions/1.9.3-p448/lib -L. -L'/Users/darrinmc/.rbenv/versions/1.9.3-p448/lib'  -L/usr/local/lib    -lffi  -lruby-static -lffi  -lpthread -ldl -lobjc "
+"/usr/local/bin/gcc-4.2 -o conftest -I/Users/darrinmc/.rvm/rubies/ruby-1.9.3-p448/include/ruby-1.9.1/x86_64-darwin12.5.0 -I/Users/darrinmc/.rvm/rubies/ruby-1.9.3-p448/include/ruby-1.9.1/ruby/backward -I/Users/darrinmc/.rvm/rubies/ruby-1.9.3-p448/include/ruby-1.9.1 -I. -I/usr/include/ffi -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/usr/local/opt/libyaml/include -I/usr/local/opt/readline/include -I/usr/local/opt/libksba/include -I/usr/local/opt/openssl/include  -O3 -ggdb -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wshorten-64-to-32 -Wimplicit-function-declaration  -fno-common -pipe conftest.c  -L. -L/Users/darrinmc/.rvm/rubies/ruby-1.9.3-p448/lib -L/usr/local/opt/libyaml/lib -L/usr/local/opt/readline/lib -L/usr/local/opt/libksba/lib -L/usr/local/opt/openssl/lib -L. -L/usr/local/lib -L/usr/local/opt/libyaml/lib -L/usr/local/opt/readline/lib -L/usr/local/opt/libksba/lib -L/usr/local/opt/openssl/lib     -lffi  -lruby.1.9.1 -lffi  -lpthread -ldl -lobjc "
+conftest.c: In function ‘t’:
+conftest.c:4: warning: implicit declaration of function ‘rb_thread_call_with_gvl’
 checked program was:
 /* begin */
  1: #include "ruby.h"
@@ -230,7 +236,7 @@ checked program was:
 
 have_func: checking for rb_thread_call_without_gvl()... -------------------- yes
 
-"gcc -o conftest -I/Users/darrinmc/.rbenv/versions/1.9.3-p448/include/ruby-1.9.1/x86_64-darwin12.5.0 -I/Users/darrinmc/.rbenv/versions/1.9.3-p448/include/ruby-1.9.1/ruby/backward -I/Users/darrinmc/.rbenv/versions/1.9.3-p448/include/ruby-1.9.1 -I. -I/usr/include/ffi -I'/Users/darrinmc/.rbenv/versions/1.9.3-p448/include'  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE  -I'/Users/darrinmc/.rbenv/versions/1.9.3-p448/include'   -O3 -Wno-error=shorten-64-to-32  -pipe conftest.c  -L. -L/Users/darrinmc/.rbenv/versions/1.9.3-p448/lib -L. -L'/Users/darrinmc/.rbenv/versions/1.9.3-p448/lib'  -L/usr/local/lib    -lffi  -lruby-static -lffi  -lpthread -ldl -lobjc "
+"/usr/local/bin/gcc-4.2 -o conftest -I/Users/darrinmc/.rvm/rubies/ruby-1.9.3-p448/include/ruby-1.9.1/x86_64-darwin12.5.0 -I/Users/darrinmc/.rvm/rubies/ruby-1.9.3-p448/include/ruby-1.9.1/ruby/backward -I/Users/darrinmc/.rvm/rubies/ruby-1.9.3-p448/include/ruby-1.9.1 -I. -I/usr/include/ffi -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/usr/local/opt/libyaml/include -I/usr/local/opt/readline/include -I/usr/local/opt/libksba/include -I/usr/local/opt/openssl/include  -O3 -ggdb -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wshorten-64-to-32 -Wimplicit-function-declaration  -fno-common -pipe conftest.c  -L. -L/Users/darrinmc/.rvm/rubies/ruby-1.9.3-p448/lib -L/usr/local/opt/libyaml/lib -L/usr/local/opt/readline/lib -L/usr/local/opt/libksba/lib -L/usr/local/opt/openssl/lib -L. -L/usr/local/lib -L/usr/local/opt/libyaml/lib -L/usr/local/opt/readline/lib -L/usr/local/opt/libksba/lib -L/usr/local/opt/openssl/lib     -lffi  -lruby.1.9.1 -lffi  -lpthread -ldl -lobjc "
 conftest.c: In function ‘t’:
 conftest.c:4: error: ‘rb_thread_call_without_gvl’ undeclared (first use in this function)
 conftest.c:4: error: (Each undeclared identifier is reported only once
@@ -251,7 +257,9 @@ checked program was:
 12: }
 /* end */
 
-"gcc -o conftest -I/Users/darrinmc/.rbenv/versions/1.9.3-p448/include/ruby-1.9.1/x86_64-darwin12.5.0 -I/Users/darrinmc/.rbenv/versions/1.9.3-p448/include/ruby-1.9.1/ruby/backward -I/Users/darrinmc/.rbenv/versions/1.9.3-p448/include/ruby-1.9.1 -I. -I/usr/include/ffi -I'/Users/darrinmc/.rbenv/versions/1.9.3-p448/include'  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE  -I'/Users/darrinmc/.rbenv/versions/1.9.3-p448/include'   -O3 -Wno-error=shorten-64-to-32  -pipe conftest.c  -L. -L/Users/darrinmc/.rbenv/versions/1.9.3-p448/lib -L. -L'/Users/darrinmc/.rbenv/versions/1.9.3-p448/lib'  -L/usr/local/lib    -lffi  -lruby-static -lffi  -lpthread -ldl -lobjc "
+"/usr/local/bin/gcc-4.2 -o conftest -I/Users/darrinmc/.rvm/rubies/ruby-1.9.3-p448/include/ruby-1.9.1/x86_64-darwin12.5.0 -I/Users/darrinmc/.rvm/rubies/ruby-1.9.3-p448/include/ruby-1.9.1/ruby/backward -I/Users/darrinmc/.rvm/rubies/ruby-1.9.3-p448/include/ruby-1.9.1 -I. -I/usr/include/ffi -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/usr/local/opt/libyaml/include -I/usr/local/opt/readline/include -I/usr/local/opt/libksba/include -I/usr/local/opt/openssl/include  -O3 -ggdb -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wshorten-64-to-32 -Wimplicit-function-declaration  -fno-common -pipe conftest.c  -L. -L/Users/darrinmc/.rvm/rubies/ruby-1.9.3-p448/lib -L/usr/local/opt/libyaml/lib -L/usr/local/opt/readline/lib -L/usr/local/opt/libksba/lib -L/usr/local/opt/openssl/lib -L. -L/usr/local/lib -L/usr/local/opt/libyaml/lib -L/usr/local/opt/readline/lib -L/usr/local/opt/libksba/lib -L/usr/local/opt/openssl/lib     -lffi  -lruby.1.9.1 -lffi  -lpthread -ldl -lobjc "
+conftest.c: In function ‘t’:
+conftest.c:4: warning: implicit declaration of function ‘rb_thread_call_without_gvl’
 checked program was:
 /* begin */
  1: #include "ruby.h"
@@ -272,7 +280,7 @@ checked program was:
 
 have_func: checking for ffi_prep_cif_var()... -------------------- no
 
-"gcc -o conftest -I/Users/darrinmc/.rbenv/versions/1.9.3-p448/include/ruby-1.9.1/x86_64-darwin12.5.0 -I/Users/darrinmc/.rbenv/versions/1.9.3-p448/include/ruby-1.9.1/ruby/backward -I/Users/darrinmc/.rbenv/versions/1.9.3-p448/include/ruby-1.9.1 -I. -I/usr/include/ffi -I'/Users/darrinmc/.rbenv/versions/1.9.3-p448/include'  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE  -I'/Users/darrinmc/.rbenv/versions/1.9.3-p448/include'   -O3 -Wno-error=shorten-64-to-32  -pipe conftest.c  -L. -L/Users/darrinmc/.rbenv/versions/1.9.3-p448/lib -L. -L'/Users/darrinmc/.rbenv/versions/1.9.3-p448/lib'  -L/usr/local/lib    -lffi  -lruby-static -lffi  -lpthread -ldl -lobjc "
+"/usr/local/bin/gcc-4.2 -o conftest -I/Users/darrinmc/.rvm/rubies/ruby-1.9.3-p448/include/ruby-1.9.1/x86_64-darwin12.5.0 -I/Users/darrinmc/.rvm/rubies/ruby-1.9.3-p448/include/ruby-1.9.1/ruby/backward -I/Users/darrinmc/.rvm/rubies/ruby-1.9.3-p448/include/ruby-1.9.1 -I. -I/usr/include/ffi -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/usr/local/opt/libyaml/include -I/usr/local/opt/readline/include -I/usr/local/opt/libksba/include -I/usr/local/opt/openssl/include  -O3 -ggdb -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wshorten-64-to-32 -Wimplicit-function-declaration  -fno-common -pipe conftest.c  -L. -L/Users/darrinmc/.rvm/rubies/ruby-1.9.3-p448/lib -L/usr/local/opt/libyaml/lib -L/usr/local/opt/readline/lib -L/usr/local/opt/libksba/lib -L/usr/local/opt/openssl/lib -L. -L/usr/local/lib -L/usr/local/opt/libyaml/lib -L/usr/local/opt/readline/lib -L/usr/local/opt/libksba/lib -L/usr/local/opt/openssl/lib     -lffi  -lruby.1.9.1 -lffi  -lpthread -ldl -lobjc "
 conftest.c: In function ‘t’:
 conftest.c:4: error: ‘ffi_prep_cif_var’ undeclared (first use in this function)
 conftest.c:4: error: (Each undeclared identifier is reported only once
@@ -293,10 +301,12 @@ checked program was:
 12: }
 /* end */
 
-"gcc -o conftest -I/Users/darrinmc/.rbenv/versions/1.9.3-p448/include/ruby-1.9.1/x86_64-darwin12.5.0 -I/Users/darrinmc/.rbenv/versions/1.9.3-p448/include/ruby-1.9.1/ruby/backward -I/Users/darrinmc/.rbenv/versions/1.9.3-p448/include/ruby-1.9.1 -I. -I/usr/include/ffi -I'/Users/darrinmc/.rbenv/versions/1.9.3-p448/include'  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE  -I'/Users/darrinmc/.rbenv/versions/1.9.3-p448/include'   -O3 -Wno-error=shorten-64-to-32  -pipe conftest.c  -L. -L/Users/darrinmc/.rbenv/versions/1.9.3-p448/lib -L. -L'/Users/darrinmc/.rbenv/versions/1.9.3-p448/lib'  -L/usr/local/lib    -lffi  -lruby-static -lffi  -lpthread -ldl -lobjc "
+"/usr/local/bin/gcc-4.2 -o conftest -I/Users/darrinmc/.rvm/rubies/ruby-1.9.3-p448/include/ruby-1.9.1/x86_64-darwin12.5.0 -I/Users/darrinmc/.rvm/rubies/ruby-1.9.3-p448/include/ruby-1.9.1/ruby/backward -I/Users/darrinmc/.rvm/rubies/ruby-1.9.3-p448/include/ruby-1.9.1 -I. -I/usr/include/ffi -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE   -I/usr/local/opt/libyaml/include -I/usr/local/opt/readline/include -I/usr/local/opt/libksba/include -I/usr/local/opt/openssl/include  -O3 -ggdb -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wshorten-64-to-32 -Wimplicit-function-declaration  -fno-common -pipe conftest.c  -L. -L/Users/darrinmc/.rvm/rubies/ruby-1.9.3-p448/lib -L/usr/local/opt/libyaml/lib -L/usr/local/opt/readline/lib -L/usr/local/opt/libksba/lib -L/usr/local/opt/openssl/lib -L. -L/usr/local/lib -L/usr/local/opt/libyaml/lib -L/usr/local/opt/readline/lib -L/usr/local/opt/libksba/lib -L/usr/local/opt/openssl/lib     -lffi  -lruby.1.9.1 -lffi  -lpthread -ldl -lobjc "
+conftest.c: In function ‘t’:
+conftest.c:4: warning: implicit declaration of function ‘ffi_prep_cif_var’
 Undefined symbols for architecture x86_64:
   "_ffi_prep_cif_var", referenced from:
-      _t in ccX2KIPN.o
+      _t in ccGmT2T0.o
 ld: symbol(s) not found for architecture x86_64
 collect2: ld returned 1 exit status
 checked program was:

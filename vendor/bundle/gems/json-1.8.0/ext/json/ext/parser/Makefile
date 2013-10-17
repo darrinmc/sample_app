@@ -12,11 +12,11 @@ ECHO = $(ECHO1:0=@echo)
 #### Start of system configuration section. ####
 
 srcdir = .
-topdir = /Users/darrinmc/.rbenv/versions/1.9.3-p448/include/ruby-1.9.1
-hdrdir = /Users/darrinmc/.rbenv/versions/1.9.3-p448/include/ruby-1.9.1
-arch_hdrdir = /Users/darrinmc/.rbenv/versions/1.9.3-p448/include/ruby-1.9.1/$(arch)
+topdir = /Users/darrinmc/.rvm/rubies/ruby-1.9.3-p448/include/ruby-1.9.1
+hdrdir = /Users/darrinmc/.rvm/rubies/ruby-1.9.3-p448/include/ruby-1.9.1
+arch_hdrdir = /Users/darrinmc/.rvm/rubies/ruby-1.9.3-p448/include/ruby-1.9.1/$(arch)
 VPATH = $(srcdir):$(arch_hdrdir)/ruby:$(hdrdir)/ruby
-prefix = $(DESTDIR)/Users/darrinmc/.rbenv/versions/1.9.3-p448
+prefix = $(DESTDIR)/Users/darrinmc/.rvm/rubies/ruby-1.9.3-p448
 rubylibprefix = $(libdir)/$(RUBY_BASE_NAME)
 exec_prefix = $(prefix)
 vendorhdrdir = $(rubyhdrdir)/vendor_ruby
@@ -53,11 +53,11 @@ vendorarchdir = $(vendorlibdir)/$(sitearch)
 
 NULLCMD = :
 
-CC = gcc
+CC = /usr/local/bin/gcc-4.2
 CXX = g++
-LIBRUBY = $(LIBRUBY_A)
+LIBRUBY = $(LIBRUBY_SO)
 LIBRUBY_A = lib$(RUBY_SO_NAME)-static.a
-LIBRUBYARG_SHARED = 
+LIBRUBYARG_SHARED = -l$(RUBY_SO_NAME)
 LIBRUBYARG_STATIC = -l$(RUBY_SO_NAME)-static
 empty =
 OUTFLAG = -o $(empty)
@@ -68,13 +68,13 @@ cflags   =  $(optflags) $(debugflags) $(warnflags)
 optflags = -O3
 debugflags = -ggdb
 warnflags = -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wshorten-64-to-32 -Wimplicit-function-declaration
-CFLAGS   = -fno-common  -O3 -Wno-error=shorten-64-to-32  -pipe -Wall $(ARCH_FLAG)
+CFLAGS   = -fno-common $(cflags)  -fno-common -pipe -O3 -Wall $(ARCH_FLAG)
 INCFLAGS = -I. -I$(arch_hdrdir) -I$(hdrdir)/ruby/backward -I$(hdrdir) -I$(srcdir)
 DEFS     = 
-CPPFLAGS =  -I'/Users/darrinmc/.rbenv/versions/1.9.3-p448/include'  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE $(DEFS) $(cppflags)
+CPPFLAGS =  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE $(DEFS) $(cppflags) -I/usr/local/opt/libyaml/include -I/usr/local/opt/readline/include -I/usr/local/opt/libksba/include -I/usr/local/opt/openssl/include
 CXXFLAGS = $(CFLAGS) $(cxxflags)
-ldflags  = -L. -L'/Users/darrinmc/.rbenv/versions/1.9.3-p448/lib'  -L/usr/local/lib
-dldflags = -Wl,-undefined,dynamic_lookup -Wl,-multiply_defined,suppress -Wl,-flat_namespace 
+ldflags  = -L. -L/usr/local/lib -L/usr/local/opt/libyaml/lib -L/usr/local/opt/readline/lib -L/usr/local/opt/libksba/lib -L/usr/local/opt/openssl/lib 
+dldflags = -Wl,-undefined,dynamic_lookup -Wl,-multiply_defined,suppress -Wl,-flat_namespace -L/usr/local/opt/libyaml/lib -L/usr/local/opt/readline/lib -L/usr/local/opt/libksba/lib -L/usr/local/opt/openssl/lib  
 ARCH_FLAG = 
 DLDFLAGS = $(ldflags) $(dldflags) $(ARCH_FLAG)
 LDSHARED = $(CC) -dynamic -bundle
@@ -84,11 +84,11 @@ EXEEXT =
 
 RUBY_BASE_NAME = ruby
 RUBY_INSTALL_NAME = ruby
-RUBY_SO_NAME = ruby
+RUBY_SO_NAME = ruby.1.9.1
 arch = x86_64-darwin12.5.0
 sitearch = $(arch)
 ruby_version = 1.9.1
-ruby = /Users/darrinmc/.rbenv/versions/1.9.3-p448/bin/ruby
+ruby = /Users/darrinmc/.rvm/rubies/ruby-1.9.3-p448/bin/ruby
 RUBY = $(ruby)
 RM = rm -f
 RM_RF = $(RUBY) -run -e rm -- -rf
@@ -104,8 +104,8 @@ TOUCH = exit >
 
 preload = 
 
-libpath = . $(libdir)
-LIBPATH =  -L. -L$(libdir)
+libpath = . $(libdir) /usr/local/opt/libyaml/lib /usr/local/opt/readline/lib /usr/local/opt/libksba/lib /usr/local/opt/openssl/lib
+LIBPATH =  -L. -L$(libdir) -L/usr/local/opt/libyaml/lib -L/usr/local/opt/readline/lib -L/usr/local/opt/libksba/lib -L/usr/local/opt/openssl/lib
 DEFFILE = 
 
 CLEANFILES = mkmf.log
@@ -116,7 +116,7 @@ extout =
 extout_prefix = 
 target_prefix = /json/ext
 LOCAL_LIBS = 
-LIBS =   -lpthread -ldl -lobjc 
+LIBS = $(LIBRUBYARG_SHARED)  -lpthread -ldl -lobjc 
 SRCS = parser.c
 OBJS = parser.o
 TARGET = parser
