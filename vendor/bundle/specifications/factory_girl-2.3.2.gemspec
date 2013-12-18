@@ -11,7 +11,7 @@ Gem::Specification.new do |s|
   s.email = "jferris@thoughtbot.com"
   s.homepage = "https://github.com/thoughtbot/factory_girl"
   s.require_paths = ["lib"]
-  s.rubygems_version = "1.8.24"
+  s.rubygems_version = "1.8.23"
   s.summary = "factory_girl provides a framework and DSL for defining and using model instance factories."
 
   if s.respond_to? :specification_version then
